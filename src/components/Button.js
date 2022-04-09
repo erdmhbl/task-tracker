@@ -1,6 +1,6 @@
 import React from "react";
 
-const Button = ({ handleClick, color, text }) => {
+const Button = ({ toggleShow, color, text }) => {
   /*    const handleClick = () => {
         console.log("Click with handle")
     } */
@@ -9,7 +9,7 @@ const Button = ({ handleClick, color, text }) => {
       <button
         className="btn"
         style={{ backgroundColor: color}}
-        onClick={handleClick}
+        onClick={toggleShow}
       >
         {text}
       </button>
